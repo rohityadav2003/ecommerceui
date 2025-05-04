@@ -25,7 +25,7 @@ export default function Search() {
               <div className="col-12 col-sm-12 col-md-4 col-lg-4 mb-3" key={index}>
                 <div className="card "style={{width:"300px",}}>
                   <img
-                    src={`${process.env.REACT_APP_BACKEND_URL}/${product.image1[0]}`}
+                    src={`${process.env.REACT_APP_BACKEND_URL}${product.image1[0]}`}
                     className="card-img-top"
                     alt={product.name}
                     style={{ height: "200px", objectFit: "contain",width:"100%"}}

@@ -232,7 +232,7 @@ export default function Main() {
             onMouseLeave={() => setHoveredImage(null)}
           >
             <img id="different-categories"
-              src={`${process.env.REACT_APP_BACKEND_URL}/${
+              src={`${process.env.REACT_APP_BACKEND_URL}${
                 hoveredImage === item.category
                   ? item.image[1]
                   : item.image[0]
@@ -313,7 +313,7 @@ export default function Main() {
 
                   {/* Product Image */}
                   <img
-                    src={`${process.env.REACT_APP_BACKEND_URL}/${item.image1}`}
+                    src={`${process.env.REACT_APP_BACKEND_URL}${item.image1}`}
                     className="card-img-top"
                     alt="Product"
                     style={{
@@ -448,7 +448,7 @@ export default function Main() {
               <SwiperSlide key={index}>
                 <div className="card card2 text-center featured-card">
                   <img
-                    src={`${process.env.REACT_APP_BACKEND_URL}/${item.image1}`}
+                    src={`${process.env.REACT_APP_BACKEND_URL}${item.image1}`}
                     className="card-img-top featured-img"
                     alt="Product"
                   />

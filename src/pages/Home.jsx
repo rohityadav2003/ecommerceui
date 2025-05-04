@@ -345,7 +345,7 @@ export default function Home() {
                   }}
                 >
                   <img
-                    src={`${process.env.REACT_APP_BACKEND_URL}/${item.image[1]}`}
+                    src={`${process.env.REACT_APP_BACKEND_URL}${item.image[1]}`}
                     style={{
                       width: "50px",
                       height: "50px",
