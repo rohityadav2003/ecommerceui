@@ -11,7 +11,7 @@ export default function Address() {
     const handlesubmit=async(e)=>{
         e.preventDefault();
         try{
-            const response=await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/address`,address,{
+            const response=await axios.post("https://e-commerceyarn.onrender.com/user/address",address,{
                 headers:{
                     'Content-Type':'application/json',
                 },
